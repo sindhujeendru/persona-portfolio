@@ -1,0 +1,71 @@
+
+
+<div class="container text=center">
+<h2> Sindhu Jeendru </h2>
+
+<form action="blog">
+  <br>
+  <input type="submit" value="blog" class="btn btn-primary" display="inline">
+  <br>  
+</form>
+
+<form action="about">
+ <br>
+ <input type="submit" value="about" display="inline" >
+ <br>
+</form>
+
+</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+div {
+  background-image: url("C:/Users/Saritha/machine learning/Online course/personal_portfolio_project/media/portfolio/images/download.jpg");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body 
+  {  background-color: #F0FFF0;
+
+         }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+
+<body>
+
+<div class="row">
+  {% for project in projects %}
+  <div class="column">
+    <p>{{ project.description }} <p>
+    <p>{{ project.title }} <p>
+    <img src="{{ project.image.url }}" height=200 width=300 >
+    {% if project.url %}
+    <a href="{{ project.url }}">Link</a>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+</body>
+</html>
+

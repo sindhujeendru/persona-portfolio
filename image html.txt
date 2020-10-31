@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         body {
+            background-image: url("C:/Users/Saritha/machine learning/Online course/personal_portfolio_project/media/portfolio/images/brain.jpg");
+         }
+      </style>
+   </head>
+   <body>
+      <h1>Connect with Tutors</h1>
+   </body>
+</html>
+
+
+<!DOCTYPE html> 
+<html> 
+<head>Background Attribute inline in body</head> 
+<body background="C:/Users/Saritha/machine learning/Online course/personal_portfolio_project/media/portfolio/images/brain.jpg"> 
+<h1>This is how you can add background attribute in your html page</h1> 
+<p><a href="https://www.linkedin.com/in/sindhu-reddy-8787a068/">Connect with Linkedln</a></p> 
+<p>Background attribute specify background image for html document</p> 
+</body> 
+</html>
